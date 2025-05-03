@@ -1,37 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craft</title>
-    <!-- google fonts start -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <!-- google fonts end -->
-    <!-- tailwind and daisyui start -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind and daisyui end -->
-     <!-- font awsome start -->
-     <script src="https://kit.fontawesome.com/2d2b6264bc.js" crossorigin="anonymous"></script>
-     <!-- font awsome end -->
-      <style>
-        .font-playfair{
-            font-family: "Playfair Display", serif;
-        }
-        
-      </style>
-</head>
-<body>
-<!-- header start -->
-    <header class="lg:mb-20 md:mb-10 mb-5 bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/pexels-photo-1639562.jpeg); background-repeat: no-repeat;">
+  <header class="lg:mb-20 md:mb-10 mb-5 bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/pexels-photo-1639562.jpeg); background-repeat: no-repeat;">
 
    
-<!-- navbar start -->
-        <div class="navbar ">
-            <div class="navbar-start ">
+
+        <div class="navbar">
+            <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost text-white lg:hidden">
                   <svg
@@ -81,10 +53,10 @@
               <a class=" bg-[#9d2e33] lg:text-lg md:text-base text-sm lg:px-7 lg:py-[14px] md:px-6 md:py-3 px-3 py-2 rounded-[5px] text-white font-medium cursor-pointer">Order Now</a>
             </div>
           </div>
-    <!-- navbar end -->
     
     
-    <!-- banner start -->
+    
+    
     
       <section class="lg:py-[130px] md:py-[80px] py-[40px] md:ml-10 ml-3">
         <div class="">
@@ -97,12 +69,7 @@
                 </div>
         </div>
       </section>
-    <!-- banner end -->
+    
+    
         </header>
-<!-- header end -->
 
-
-
-        
-</body>
-</html>
