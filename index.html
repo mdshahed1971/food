@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
     <!-- google fonts end -->
     <!-- tailwind and daisyui start -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,7 +25,9 @@
         .font-playfair{
             font-family: "Playfair Display", serif;
         }
-        
+       .font-georgian{
+        font-family: "Noto Sans Georgian", sans-serif;
+       } 
       </style>
 </head>
 <body>
@@ -132,8 +138,8 @@
             <h1 class="text-white font-semibold lg:text-6xl md:text-4xl text-3xl font-playfair md:leading-[60px] leading-[40px] lg:mt-5 md:mt-4 mt-3 lg:mb-5 md:mb-4 mb-3">Gourmet Burgers & <br> <span class="text-[#d4a96a]">Crafted</span> Delights</h1>
             <p class="lg:text-lg text-base font-normal text-white leading-[30px] font-playfair lg:mb-5 md:mb-4 mb-3">Experience the perfect blend of convenience and culinary artistry. Our <br>chef-crafted fast food uses premium ingredients for an elevated dining <br>experience.<p>
                 <div class=" flex items-center md:gap-5 gap-3">
-                    <a class="bg-[#d4a96a] lg:text-lg text-base font-medium font-playfair text-black rounded-[5px] md:px-5 md:py-3 px-3 py-[6px]">View Menu</a>
-                    <a class="text-[#d4a96a] lg:text-lg text-base font-medium font-playfair md:px-5 md:py-3 px-3 py-[6px] border border-[#d4a96a] hover:bg-[#d4a96a] hover:text-black duration-500 rounded-[5px]">Order Online</a>
+                    <a class="bg-[#d4a96a] lg:text-lg text-base font-medium font-playfair text-black rounded-[5px] md:px-5 md:py-3 cursor-pointer px-3 py-[6px]">View Menu</a>
+                    <a class="text-[#d4a96a] lg:text-lg text-base font-medium font-playfair md:px-5 md:py-3 px-3 py-[6px] border border-[#d4a96a] hover:bg-[#d4a96a] hover:text-black duration-500 cursor-pointer rounded-[5px]">Order Online</a>
                 </div>
         </div>
       </section>
@@ -433,7 +439,7 @@
 
 <!-- Seasonal Specials start -->
 
-<section class="bg-cover py-10 relative" style="background-image: url(./img/close-up-hamburger-isolated_23-2151604186.avif); background-repeat: no-repeat;">
+<section class="bg-cover lg:py-20 md:py-10 py-5 lg:mb-20 md:mb-10 mb-5 relative" style="background-image: url(./img/close-up-hamburger-isolated_23-2151604186.avif); background-repeat: no-repeat;">
   
   <div class="absolute inset-0 bg-[#1d1d1d] opacity-80"></div> <!-- Dark overlay -->
 
@@ -447,33 +453,43 @@
   </div>
 
 
-<div class="flex justify-center gap-16">
+<div class="flex lg:flex-row flex-col justify-center gap-16">
 <!-- card 1 -->
-  <div class="card w-2/5">
-   
-    <div class="card-body">
-      <h2 class="card-title flex justify-between text-[#ffffff] font-playfair lg:text-3xl md:text-2xl text-xl leading-[40px] font-semibold">
-        Summer Harvest Burger
-<div><h3 class="text-[#d4a96a] lg:text-3xl md:text-2xl text-xl font-medium font-playfair">$16.95</h3></div>
-        
-      </h2>
-      <p class="text-[#e9e5e0] lg:mt-4 md:mt-3 mt-2 lg:mb-8 md:mb-5 mb-4 md:text-base text-sm font-normal leading-[26px]">Available until September 30th</p>
-<p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]"><i class="fa-solid fa-check text-orange-300 text-xl"></i>Grass-fed beef patty with heirloom tomatoes</p>
-
-<p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]"><i class="fa-solid fa-check text-orange-300 text-xl"></i>Fresh burrata cheese and basil pesto</p>
-
-
-<p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]"><i class="fa-solid fa-check text-orange-300 text-xl"></i>
-  Balsamic reduction and arugula</p>
-
-
-<p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]"><i class="fa-solid fa-check text-orange-300 text-xl"></i>Served on a toasted ciabatta bun</p>
-      <div class="card-actions flex items-center justify-between">
-        <a class="bg-[#d4a96a] text-black font-medium cursor-pointer text-base lg:px-7 lg:py-4 md:px-5 md:py-3 px-4 rounded-[5px] py-2">Order Now</a>
-        <a class="text-[#d4a96a] font-medium md:text-xl cursor-pointer text-base">Limited Edition</a>
+<div class="card border  px-1 lg:w-2/5  w-full bg-white/5 backdrop-blur-sm rounded-lg">
+  <div class="card-body">
+    <h2 class="card-title flex justify-between text-[#ffffff] font-playfair lg:text-3xl md:text-2xl text-lg leading-[40px] font-semibold">
+      Summer Harvest Burger
+      <div>
+        <h3 class="text-[#d4a96a] lg:text-3xl md:text-2xl text-xl font-medium font-playfair">$16.95</h3>
       </div>
+    </h2>
+
+    <p class="text-[#e9e5e0] lg:mt-4 md:mt-3 mt-2 lg:mb-8 md:mb-5 mb-4 md:text-base text-sm font-normal leading-[26px]">
+      Available until September 30th
+    </p>
+
+    <p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]">
+      <i class="fa-solid fa-check text-orange-300 text-xl"></i> Grass-fed beef patty with heirloom tomatoes
+    </p>
+
+    <p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]">
+      <i class="fa-solid fa-check text-orange-300 text-xl"></i> Fresh burrata cheese and basil pesto
+    </p>
+
+    <p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]">
+      <i class="fa-solid fa-check text-orange-300 text-xl"></i> Balsamic reduction and arugula
+    </p>
+
+    <p class="text-[#e9e5e0] md:mb-2 mb-1 md:text-base text-sm font-normal leading-[26px]">
+      <i class="fa-solid fa-check text-orange-300 text-xl"></i> Served on a toasted ciabatta bun
+    </p>
+
+    <div class="card-actions flex items-center justify-between">
+      <a class="bg-[#d4a96a] text-black font-medium cursor-pointer text-base lg:px-7 lg:py-4 md:px-5 md:py-3 px-4 rounded-[5px] py-2">Order Now</a>
+      <a class="text-[#d4a96a] font-medium md:text-xl cursor-pointer text-base">Limited Edition</a>
     </div>
   </div>
+</div>
 
 
 
@@ -481,7 +497,7 @@
 
 
 <!-- card 2 -->
-  <div class="card w-2/5">
+  <div class="card border px-1 lg:w-2/5 w-full bg-white/5 backdrop-blur-sm rounded-lg">
    
     <div class="card-body">
       <h2 class="card-title flex justify-between text-[#ffffff] font-playfair lg:text-3xl md:text-2xl text-xl leading-[40px] font-semibold">
@@ -516,12 +532,96 @@
 
 
 
+<!-- Customer Reviews start -->
+<section class="lg:mb-20 md:mb-10 mb-5">
+<div class="text-center">
+  <h3 class="text-[#9d2e33] lg:text-xl text-lg font-playfair font-medium italic lg:mb-5 md:mb-3 mb-2">Customer Reviews</h3>
+  <h1 class="text-black lg:mb-5 md:mb-3 mb-2 font-playfair font-semibold lg:text-[40px] md:text-3xl text-2xl lg:leading-[50px] leading-[40px]">What Our Patrons Say</h1>
+  <p class="text-[#5a5a5a] lg:text-lg md:text-base text-sm leading-[26px] font-normal lg:mb-8 md:mb-5 mb-3">We take pride in providing an exceptional dining experience. Here's what our customers have <br>to say about our gourmet fast food.</p>
+</div>
 
+<div class="flex justify-center ">
+<div class="bg-[#f8f6f3]">
+  <h4 class="text-black font-medium py-10 px-14 font-playfair italic lg:text-xl md:text-lg text-base">
+    CRAFT has completely changed my perception of fast food. The Truffle Aioli <br>
+    Burger is a masterpiece—perfectly cooked, incredibly flavorful, and with <br>
+    ingredients that you can tell are top quality. Fast food with the quality of fine <br>
+    dining.
+  </h4>
+  <div class="flex">
+  <div class="w-[100px] rounded-[50%] bg-red-500">
+    <img src="./img/close-up-hamburger-isolated_23-2151604186 (1).avif" alt="" style="background-color:#f8f6f3;">
+  </div>
+  <div>
+  <h3>Michael Roberts</h3>
+  <p>Food Enthusiast</p>
+</div>
+  </div>
+</div>
+</div>
 
+</section>
 
+<!-- Customer Reviews end -->
 
+<!-- Ready to Experience Premium Fast Food start -->
+<section class="bg-[#9d2e33]">
+<div class="text-center lg:py-16 md:py-10 py-5">
+<h1 class="text-white font-playfair lg:text-4xl md:text-3xl text-2xl md:leading-[40px] leading-[30px] lg:mb-7 md:mb-5 mb-3 font-semibold">
+  Ready to Experience Premium Fast Food?
+</h1>
+  <p class="text-white font-normal md:text-base text-sm leading-[26px] lg:mb-8 md:mb-5 mb-3">Order online for pickup or delivery and enjoy our chef-crafted delights in the comfort of <br> your home or office. Fast, convenient, and exceptionally delicious.</p>
+  <a class="bg-[#d4a96a] text-black font-medium cursor-pointer lg:text-lg text-base lg:px-8 lg:py-4 md:px-5 md:py-3 px-4 rounded-[5px] py-2">Order Now</a>
 
+</div>
 
+</section>
+<!-- Ready to Experience Premium Fast Food end -->
+
+<!-- footer start -->
+<footer class="footer bg-black text-base-content p-10">
+  <nav>
+  <a class="btn btn-ghost lg:mb-4 md:mb-3 mb-2 lg:text-3xl md:text-2xl text-xl font-playfair text-white font-bold ">CRAFT</a>
+  <p class="text-[#f8f6f3] lg:mb-5 md:mb-4 mb-3 text-base font-normal cursor-pointer">Redefining fast food with premium ingredients, chef <br>-crafted recipes, and exceptional flavors. Quick service <br>without compromising on quality.
+  </p>
+  <div class="flex gap-7">
+  <i class="fa-brands fa-facebook-f bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
+  <i class="fa-brands fa-instagram bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
+  <i class="fa-brands fa-twitter bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
+  <i class="fa-brands fa-pinterest-p bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
+</div>
+</nav>
+  <nav>
+    <h6 class=" md:text-xl text-lg font-semibold text-white font-playfair">Quick Links</h6>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Home</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>About us</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Menu</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Specials</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Testimonials</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Careers</a>
+  </nav>
+  <nav>
+    <h6 class=" md:text-xl text-lg font-semibold text-white font-playfair">Hours</h6>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Monday - Friday: 11AM <br>- 10PM</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Saturday: 10AM - 11PM</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Sunday: 10AM - 9PM</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Order Online 24/7</a>
+  </nav>
+  <nav>
+    <h6 class=" md:text-xl text-lg font-semibold text-white font-playfair">Contact</h6>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer">
+      <i class="fa-solid fa-location-dot text-[#d4a96a] mr-2 cursor-pointer text-base"></i>123 Gourmet Avenue, <br>Culinary District, New <br>York, NY 10001</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer"><i class="fa-solid fa-phone-flip text-[#d4a96a] cursor-pointer mr-2 text-base"></i>(212) 555-1234</a>
+    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer"><i class="fa-solid fa-envelope cursor-pointer text-[#d4a96a] mr-2 text-base"></i>info@craftburgers.com</a>
+  </nav>
+</footer>
+<div class="bg-black py-5">
+  <div class="border lg:mb-5 md:mb-4 mb-3">
+
+  </div>
+  <p class="text-[#e9e5e0] md:text-base text-sm text-center">© 2025 CRAFT Premium Fast Food. All rights reserved. | Website by CodingVox</p>
+</div>
+<!-- footer end -->
 
 
 </body>
