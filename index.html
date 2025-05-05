@@ -37,66 +37,103 @@
 <header class="lg:mb-20 md:mb-10 mb-5 bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/pexels-photo-1639562.jpeg); background-repeat: no-repeat;">
 
   <!-- navbar start -->
-  <div id="navbar" class="navbar fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
-    <div class="navbar-start">
+  <div class="navbar ">
+    <div class="navbar-start ">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost text-white lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
               d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </div>
-        <ul id="dropdownLinks" tabindex="0"
+        <ul
+          tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a class="text-white lg:text-lg md:text-base text-sm font-normal">Home</a></li>
-          <li><a class="text-white lg:text-lg md:text-base text-sm font-normal">About</a></li>
-          <li><a class="text-white lg:text-lg md:text-base text-sm font-normal">Menu</a></li>
-          <li><a class="text-white lg:text-lg md:text-base text-sm font-normal">Specials</a></li>
-          <li><a class="text-white lg:text-lg md:text-base text-sm font-normal">Testimonials</a></li>
-          <li><a class="text-white lg:text-lg md:text-base text-sm font-normal">Contact</a></li>
+          <li><a class="text-[#d4a96a] lg:text-lg md:text-base text-sm font-normal link">Home</a></li>
+          <li><a class="text-black duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">About</a></li>
+          <li><a class="text-black duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">Menu</a></li>
+          <li><a class="text-black duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">Specials</a></li>
+          <li><a class="text-black duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">Testimonials</a></li>
+          <li><a class="text-black duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">Contact</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost lg:text-3xl md:text-2xl text-xl font-playfair text-white font-bold">CRAFT</a>
+      <a class="btn btn-ghost lg:text-3xl md:text-2xl text-xl font-playfair text-white font-bold ">CRAFT</a>
     </div>
+    <div class="navbar-center
+     hidden lg:flex lg:mt-5">
+      <ul class="menu menu-horizontal px-1">
+        <li>
+          <a class="relative text-[#d4a96a] lg:text-lg md:text-base text-sm font-normal 
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#d4a96a]">
+            Home
+          </a>
+        </li>
+        
+        <li>
+          <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
+             About
+          </a>
+        </li>
+          <li>
+            <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
+               Menu
+            </a>
+          </li>
+          <li>
+            <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
+               Specials
+            </a>
+          </li>
+          <li>
+            <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
+               Testimonials
 
-    <div class="navbar-center hidden lg:flex lg:mt-5">
-      <ul id="navLinks" class="menu menu-horizontal px-1">
-        <li>
-          <a class="relative text-white lg:text-lg md:text-base text-sm font-normal">Home</a>
-        </li>
-        <li>
-          <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">
-            About</a>
-        </li>
-        <li>
-          <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">
-            Menu</a>
-        </li>
-        <li>
-          <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">
-            Specials</a>
-        </li>
-        <li>
-          <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">
-            Testimonials</a>
-        </li>
-        <li>
-          <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a]">
-            Contact</a>
-        </li>
+            </a>
+          </li>
+          <li>
+            <a class="relative text-white duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
+               Contact
+            </a>
+          </li>
+          
+
+          
+         
+         
+          
       </ul>
     </div>
-
     <div class="mt-3 md:ml-20 ml-2 flex md:gap-5 gap-1">
-      <i class="fa-solid fa-magnifying-glass text-white lg:text-xl text-lg cursor-pointer"></i>
+      <i class="fa-solid fa-magnifying-glass text-white lg:text-xl text-lg  cursor-pointer"></i>
       <i class="fa-solid fa-cart-shopping text-white lg:text-xl text-lg cursor-pointer"></i>
     </div>
-
-    <div class="navbar-end md:mr-5">
-      <a class="bg-[#9d2e33] lg:text-lg md:text-base text-sm lg:px-7 lg:py-[14px] md:px-6 md:py-3 px-3 py-2 rounded-[5px] text-white font-medium cursor-pointer">Order Now</a>
+  <div class="navbar-end md:mr-5">
+      <a class=" bg-[#9d2e33] lg:text-lg md:text-base text-sm lg:px-7 lg:py-[14px] md:px-6 md:py-3 px-3 py-2 rounded-[5px] text-white font-medium cursor-pointer">Order Now</a>
     </div>
   </div>
+
+
+
   <!-- navbar end -->
+
+
+
+
+
+
 
   <!-- banner start -->
   <section class="lg:py-[130px] md:py-[80px] py-[40px] md:ml-10 ml-3">
@@ -220,31 +257,31 @@
   </div>
 
 <div class="flex flex-wrap   justify-center lg:gap-8 md:gap-6 gap-4 lg:mb-8 md:mb-4 mb-3">
-  <a class="relative cursor-pointer text-[#5a5a5a] lg:text-lg md:text-base text-sm font-normal 
+  <a class="relative cursor-pointer font-playfair text-black lg:text-lg md:text-base text-sm font-normal 
                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#d4a96a]">
                     All
                   </a>
            
-                  <a class="relative cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+                  <a class="relative font-playfair cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
                   after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
                   Signature Burgers
                </a>          
 
 
 
-               <a class="relative cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+               <a class="relative font-playfair cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
                after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
                Sandwiches
             </a> 
-            <a class="relative cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+            <a class="relative font-playfair cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
             Sides
          </a> 
-         <a class="relative cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+         <a class="relative font-playfair cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
          after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
          Desserts
       </a> 
-      <a class="relative cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
+      <a class="relative font-playfair cursor-pointer text-[#5a5a5a] duration-500 lg:text-lg md:text-base text-sm font-normal hover:text-[#d4a96a] 
       after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#d4a96a] after:transition-all after:duration-300 hover:after:w-full">
       Drinks
    </a> 

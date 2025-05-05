@@ -81,7 +81,7 @@
               <i class="fa-solid fa-magnifying-glass text-white lg:text-xl text-lg  cursor-pointer"></i>
               <i class="fa-solid fa-cart-shopping text-white lg:text-xl text-lg cursor-pointer"></i>
             </div>
-            <div class="navbar-end md:mr-5">
+          <div class="navbar-end md:mr-5">
               <a class=" bg-[#9d2e33] lg:text-lg md:text-base text-sm lg:px-7 lg:py-[14px] md:px-6 md:py-3 px-3 py-2 rounded-[5px] text-white font-medium cursor-pointer">Order Now</a>
             </div>
           </div>
