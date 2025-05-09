@@ -24,6 +24,7 @@
      <!-- font awsome start -->
      <script src="https://kit.fontawesome.com/2d2b6264bc.js" crossorigin="anonymous"></script>
      <!-- font awsome end -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <style>
         .font-playfair{
             font-family: "Playfair Display", serif;
@@ -37,10 +38,11 @@
 </head>
 <body>
 <!-- header start -->
+ 
 <header class="lg:mb-20 md:mb-10 mb-5 bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/pexels-photo-1639562.jpeg); background-repeat: no-repeat;">
 
   <!-- navbar start -->
-  <div class="navbar ">
+  <div class="navbar sticky top-0 z-50 bg-transparent transition-all duration-300" id="navbar">
     <div class="navbar-start ">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost text-white lg:hidden">
@@ -571,13 +573,13 @@
   <p class="text-[#5a5a5a] lg:text-lg md:text-base text-sm leading-[26px] font-normal lg:mb-8 md:mb-5 mb-3">We take pride in providing an exceptional dining experience. Here's what our customers have <br>to say about our gourmet fast food.</p>
 </div>
 <div class="flex justify-center">
-  <div class="bg-[#f8f6f3]">
+  <div class="bg-[#f8f6f3] p-5">
     <h4 class="text-black font-medium md:py-10 md:px-20 py-6 px-10 font-playfair italic lg:text-xl md:text-lg text-base">
       CRAFT has completely changed my perception of fast food. The Truffle Aioli
       <br> Burger is a masterpiece—perfectly cooked, incredibly flavorful, and with
       <br> ingredients that you can tell are top quality. Fast food with the quality of fine dining.
     </h4>
-    <div class="flex gap-5">
+    <div class="flex gap-3">
       <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-red-500">
         <img src="./img/close-up-hamburger-isolated_23-2151604186 (1).avif" alt="Burger Image" class="object-cover w-full h-full">
       </div>
@@ -618,54 +620,88 @@
 <!-- Ready to Experience Premium Fast Food end -->
 
 <!-- footer start -->
-<footer class="footer bg-black text-base-content p-10">
+<footer class="footer bg-[#1d1d1d] text-base-content p-10">
   <nav>
   <a class="btn btn-ghost lg:mb-4 md:mb-3 mb-2 lg:text-3xl md:text-2xl text-xl font-playfair text-white font-bold ">CRAFT</a>
-  <p class="text-[#f8f6f3] lg:mb-5 md:mb-4 mb-3 text-base font-normal cursor-pointer">Redefining fast food with premium ingredients, chef <br>-crafted recipes, and exceptional flavors. Quick service <br>without compromising on quality.
+  <p class="text-[rgba(255, 255, 255, 0.7)] lg:mb-5 md:mb-4 mb-3 text-base font-normal cursor-pointer">Redefining fast food with premium ingredients, chef <br>-crafted recipes, and exceptional flavors. Quick service <br>without compromising on quality.
   </p>
   <div class="flex gap-7">
-  <i class="fa-brands fa-facebook-f bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
-  <i class="fa-brands fa-instagram bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
-  <i class="fa-brands fa-twitter bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
-  <i class="fa-brands fa-pinterest-p bg-[#5a5a5a] text-white p-2 rounded-full cursor-pointer"></i>
+  <i class="fa-brands fa-facebook-f bg-[#5a5a5a] hover:bg-[#9d2e33] duration-500 text-white p-2 rounded-full cursor-pointer"></i>
+  <i class="fa-brands fa-instagram bg-[#5a5a5a] hover:bg-[#9d2e33] duration-500 text-white p-2 rounded-full cursor-pointer"></i>
+  <i class="fa-brands fa-twitter bg-[#5a5a5a] hover:bg-[#9d2e33] duration-500 text-white p-2 rounded-full cursor-pointer"></i>
+  <i class="fa-brands fa-pinterest-p bg-[#5a5a5a] hover:bg-[#9d2e33] duration-500 text-white p-2 rounded-full cursor-pointer"></i>
 </div>
 </nav>
   <nav>
     <h6 class=" md:text-xl text-lg font-semibold text-white font-playfair">Quick Links</h6>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Home</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>About us</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Menu</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Specials</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Testimonials</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Careers</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Home</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>About us</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Menu</a>
+    <a class="ttext-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Specials</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Testimonials</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500"><i class="fa-solid fa-chevron-right mr-1"></i>Careers</a>
   </nav>
   <nav>
     <h6 class=" md:text-xl text-lg font-semibold text-white font-playfair">Hours</h6>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Monday - Friday: 11AM <br>- 10PM</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Saturday: 10AM - 11PM</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Sunday: 10AM - 9PM</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Order Online 24/7</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Monday - Friday: 11AM <br>- 10PM</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Saturday: 10AM - 11PM</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Sunday: 10AM - 9PM</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer hover:text-[#d4a96a] duration-500">Order Online 24/7</a>
   </nav>
   <nav>
     <h6 class=" md:text-xl text-lg font-semibold text-white font-playfair">Contact</h6>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer">
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer">
       <i class="fa-solid fa-location-dot text-[#d4a96a] mr-2 cursor-pointer text-base"></i>123 Gourmet Avenue, <br>Culinary District, New <br>York, NY 10001</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer"><i class="fa-solid fa-phone-flip text-[#d4a96a] cursor-pointer mr-2 text-base"></i>(212) 555-1234</a>
-    <a class="text-[#f8f6f3] text-base font-normal cursor-pointer"><i class="fa-solid fa-envelope cursor-pointer text-[#d4a96a] mr-2 text-base"></i>info@craftburgers.com</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer"><i class="fa-solid fa-phone-flip text-[#d4a96a] cursor-pointer mr-2 text-base"></i>(212) 555-1234</a>
+    <a class="text-[rgba(255, 255, 255, 0.7)] text-base font-normal cursor-pointer"><i class="fa-solid fa-envelope cursor-pointer text-[#d4a96a] mr-2 text-base"></i>info@craftburgers.com</a>
   </nav>
 </footer>
-<div class="bg-black py-5">
+<div class="bg-[#1d1d1d] py-5">
   <div class="border lg:mb-5 md:mb-4 mb-3">
 
   </div>
-  <p class="text-[#e9e5e0] md:text-base text-sm text-center">© 2025 CRAFT Premium Fast Food. All rights reserved. | Website by CodingVox</p>
+  <p class="text-[rgba(255, 255, 255, 0.7)] md:text-base text-sm text-center">© 2025 CRAFT Premium Fast Food. All rights reserved. | Website by <span class="text-[#d4a96a]">CodingVox</span></p>
 </div>
 <!-- footer end -->
 
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
+
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-white", "shadow-md");
+      navbar.classList.remove("bg-transparent");
+
+      // Change all nav links to black
+      navbar.querySelectorAll("a").forEach(link => {
+        link.classList.remove("text-white", "text-[#d4a96a]");
+        link.classList.add("text-black");
+      });
+    } else {
+      navbar.classList.remove("bg-white", "shadow-md");
+      navbar.classList.add("bg-transparent");
+
+      // Revert all nav links
+      navbar.querySelectorAll("a").forEach(link => {
+        link.classList.remove("text-black");
+        if (link.textContent.trim() === "Home") {
+          link.classList.add("text-[#d4a96a]");
+        } else {
+          link.classList.add("text-white");
+        }
+      });
+    }
+  });
+</script>
 
 
 
